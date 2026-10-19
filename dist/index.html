@@ -19,7 +19,7 @@
     <section class="layout" aria-label="수업지도안 생성기">
       <form class="card form-card" id="lessonForm">
         <div class="section-head"><div><h2>수업 정보</h2><p>기본 정보를 입력해 주세요.</p></div><span class="step-pill">STEP 01 / 02</span></div>
-        <div class="field"><label for="apiKey">Gemini API 키 <small>입력 필수</small></label><div class="key-wrap"><input class="control" id="apiKey" type="password" autocomplete="off" placeholder="AIza…" required /><button class="ghost-button" type="button" id="toggleKey">표시</button></div><p class="hint">키는 이 페이지의 메모리에만 머물며 저장되지 않습니다. <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Google AI Studio에서 발급 ↗</a></p></div>
+        <div class="field"><label for="apiKey">Gemini API 키 <small>본인 키 입력</small></label><div class="key-wrap"><input class="control" id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="AIza…" required /><button class="ghost-button" type="button" id="toggleKey">표시</button></div><p class="hint">키는 브라우저에서 Gemini에 직접 전송되며 저장되지 않습니다. 배포 소스에는 운영자 키를 넣지 말고, 각 사용자가 본인 키를 입력하세요. <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Google AI Studio에서 발급 ↗</a></p></div>
         <div class="field"><label for="model">API 모델</label><div class="model-row"><input class="control" id="model" value="gemini-3.5-flash-lite" readonly /><span class="model-tag">Gemini API</span></div></div>
         <div class="field"><label for="grade">학년 <small>예: 초등 4학년, 중학교 1학년</small></label><input class="control" id="grade" placeholder="예: 초등학교 4학년" required /></div>
         <div class="field"><label for="subject">과목</label><input class="control" id="subject" placeholder="예: 과학, 국어, 사회" required /></div>
